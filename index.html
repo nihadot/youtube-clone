@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./config.css">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./config copy.css">
 </head>
 
 <body>
@@ -15,15 +15,17 @@
     <!-- header start -->
     <header class="header">
         <div class="left-side">
+            <div class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                    aria-hidden="true"
+                    style="pointer-events: none;fill: white; display: inherit; height: 24px;height: 24px;">
+                    <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+                </svg>
+            </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
-                aria-hidden="true"
-                style="pointer-events: none;fill: white; display: inherit; height: 24px;height: 24px;">
-                <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
-            </svg>
 
 
-            <div class="" style="position: relative;">
+            <div class="header-youtube-logo" style="position: relative;">
 
                 <svg xmlns="http://www.w3.org/2000/svg" id="yt-logo-updated-svg_yt9" class="external-icon"
                     viewBox="0 0 90 20" focusable="false" aria-hidden="true"
@@ -65,6 +67,7 @@
                 </svg>
                 <label for="" style="position:absolute;top:15px;right:-14px;color: #aaa;font-size: 10px;">IN</label>
             </div>
+            <img src="./assets/youtube.svg" class="header-mobile-logo" alt="">
         </div>
         <div class="middle-side">
             <div class="search-bar">
@@ -313,7 +316,7 @@
 
 
             <!--  a line horizontally -->
-            <div class="" style="padding: 0px 20px 0px 0px;">
+            <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
             <!-- ---------------- -->
@@ -423,7 +426,7 @@
 
 
             <!--  a line horizontally -->
-            <div class="" style="padding: 0px 20px 0px 0px;">
+            <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
             <!-- ---------------- -->
@@ -600,7 +603,7 @@
 
 
             <!--  a line horizontally -->
-            <div class="" style="padding: 0px 20px 0px 0px;">
+            <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
             <!-- ---------------- -->
@@ -722,7 +725,7 @@
 
 
             <!--  a line horizontally -->
-            <div class="" style="padding: 0px 20px 0px 0px;">
+            <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
             <!-- ---------------- -->
@@ -797,7 +800,7 @@
 
 
             <!--  a line horizontally -->
-            <div class="" style="padding: 0px 20px 0px 0px;">
+            <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
             <!-- ---------------- -->
@@ -837,22 +840,29 @@
             <div class="categories-container">
 
                 <div class="categories-section">
-                    <label for="" class="category-item">All </label>
-                    <label for="" class="category-item">Music </label>
-                    <label for="" class="category-item">Fast & Furious </label>
-                    <label for="" class="category-item">Deep House </label>
-                    <label for="" class="category-item">Supercar </label>
-                    <label for="" class="category-item">News </label>
-                    <label for="" class="category-item">Electro-Pop </label>
-                    <label for="" class="category-item">Mixes </label>
-                    <label for="" class="category-item">Mammootty </label>
-                    <label for="" class="category-item">Action thrillers </label>
-                    <label for="" class="category-item">Podcasts </label>
-                    <label for="" class="category-item">Tamil cinema </label>
-                    <label for="" class="category-item">Dramedy </label>
+                    <div class="category-item">All </div>
+                    <div class="category-item">Music </div>
+                    <div class="category-item">Fast & Furious </div>
+                    <div class="category-item">Deep House </div>
+                    <div class="category-item">Supercar </div>
+                    <div class="category-item">News </div>
+                    <div class="category-item">Electro-Pop </div>
+                    <div class="category-item">Mixes </div>
+                    <div class="category-item">Mammootty </div>
+                    <div class="category-item">Action thrillers </div>
+                    <div class="category-item">Podcasts </div>
+                    <div class="category-item">Tamil cinema </div>
+                    <div class="category-item">Dramedy </div>
 
                 </div>
             </div>
+
+
+
+
+            <style>
+
+            </style>
 
             <!-- categories -->
 
@@ -863,21 +873,23 @@
             <!-- youtube videos -->
             <div class="videos-container">
                 <div class="youtube-videos">
+
+
                     <div class="video-item">
                         <div class="video-tag">
+                            <img src="https://i.ytimg.com/vi/eb0qebbK89w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLASs6A8NwZiQCA8i53fBRjtOTCiVA" alt="">
                         </div>
                         <div class="video-contents">
-                            <img src="https://yt3.ggpht.com/bK56qVGOzmcrms3XP-wuSYdkZF4iHnCvyF_K-OaJsOD597d_UrrssGOT0ENETcHUtKumPc7o=s68-c-k-c0x00ffffff-no-rj"
+                            <img src="https://yt3.ggpht.com/2xjPvpLxlTQOa8vA9nWqN9lcdsSy2_hAxXnHfzX871VLcCyayaGBOstwNlZStS8muQmDkRVahA=s68-c-k-c0x00ffffff-no-rj"
                                 style="width: 36px;height: 36px;border-radius: 100%;" alt="">
                             <div class="video-titles">
-                                <h4>" Zehra " Oriental Reggaeton Type Beat (Instrumental) Prod. by U Reggaeton Type Beat
-                                    (Instrumental) Prod. by U Reggaeton Type Beat (Instrumental) Prod. by Ultra Beats
+                                <h4>Emptiness Mashup | Hansel D | Best of Arijit Singh Jukebox | Best Travelling Songs
                                 </h4>
                                 <label title="Umer Abdussalam" for="">Umer Abdussalam</label>
                                 <div class="">
-                                    <span>15M views </span>
+                                    <span>226K views </span>
                                     <span style="display: flex;margin-top: -7px;font-weight: bold;">.</span>
-                                    <span>2 months ago</span>
+                                    <span>2 weeks ago</span>
                                 </div>
                                 <div class="video-info" style="">
                                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
@@ -895,19 +907,19 @@
 
                     <div class="video-item">
                         <div class="video-tag">
+                            <img src="https://i.ytimg.com/vi/_9MPDI09e1M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6iCRu7DWyUY_bUPk-DunP9utW7Q" alt="">
                         </div>
                         <div class="video-contents">
-                            <img src="https://yt3.ggpht.com/bK56qVGOzmcrms3XP-wuSYdkZF4iHnCvyF_K-OaJsOD597d_UrrssGOT0ENETcHUtKumPc7o=s68-c-k-c0x00ffffff-no-rj"
+                            <img src="https://yt3.ggpht.com/s9tTcVW1LiFcTcds2DCGKILK3rEs8apg2AHrlBYCGGnzZy2WzQ24kPlGC92NA6kvtNG9tB_mRA=s68-c-k-c0x00ffffff-no-rj"
                                 style="width: 36px;height: 36px;border-radius: 100%;" alt="">
                             <div class="video-titles">
-                                <h4>" Zehra " Oriental Reggaeton Type Beat (Instrumental) Prod. by U Reggaeton Type Beat
-                                    (Instrumental) Prod. by U Reggaeton Type Beat (Instrumental) Prod. by Ultra Beats
+                                <h4>Alone Night 💔 Mash-up l Lofi pupil | Bollywood songs | Chillout Lo-fi Mix | Ronak Bhatt
                                 </h4>
-                                <label title="Umer Abdussalam" for="">Umer Abdussalam</label>
+                                <label title="Ronak Bhatt" for="">Ronak Bhatt</label>
                                 <div class="">
-                                    <span>15M views </span>
+                                    <span>1.8M views </span>
                                     <span style="display: flex;margin-top: -7px;font-weight: bold;">.</span>
-                                    <span>2 months ago</span>
+                                    <span>3 months ago</span>
                                 </div>
                                 <div class="video-info" style="">
                                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
@@ -1202,7 +1214,57 @@
     </section>
 
 
+    <!-- mobile menu -->
+    <div class="mobile-menu-container">
 
+        <section class="mobile-menu">
+
+
+            <div class="mobile-menu-item">
+                <div class="mobile-menu-item-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
+                        viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                        style="pointer-events: none; display: inherit;width: 26px;height: 26px;fill:white">
+                        <g>
+                            <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
+                        </g>
+                    </svg>
+                </div>
+                <label class="mobile-menu-item-title" for="">Home</label>
+            </div>
+
+
+            <div class="mobile-menu-item">
+                <div class="mobile-menu-item-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                        aria-hidden="true"
+                        style="pointer-events: none; display: inherit;fill:white; width: 26px;height: 26px;">
+                        <path
+                            d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
+                        </path>
+                    </svg>
+                </div>
+                <label class="mobile-menu-item-title" for="">Shorts</label>
+            </div>
+
+
+            <div class="mobile-menu-item">
+                <div class="mobile-menu-item-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
+                        viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                        style="pointer-events: none;fill:white; display: inherit; width: 26px;height: 26px;">
+                        <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z">
+                        </path>
+                    </svg>
+                </div>
+                <label class="mobile-menu-item-title" for="">Subscriptions</label>
+            </div>
+
+
+        </section>
+    </div>
+
+    <!-- mobile menu -->
 
 </body>
 
