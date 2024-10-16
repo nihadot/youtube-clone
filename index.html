@@ -2,20 +2,33 @@
 <html lang="en">
 
 <head>
+    <!-- met utf tag -->
     <meta charset="UTF-8">
+    <!-- view port configure 100% -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Youtube</title>
+    <!-- configuration css linking -->
     <link rel="stylesheet" href="./config.css">
+    <!-- styles css linking -->
     <link rel="stylesheet" href="./index.css">
+    <!-- Fav icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <!-- SEO description -->
+    <meta name="description" content="Youtube">
 </head>
 
 <body>
 
 
-    <!-- header start -->
+
+    <!-- header starts, includes header left side (header-left-side) , header middle side (header-middle), header right side (header-right-side) -->
     <header class="header">
-        <div class="left-side">
-            <div class="menu">
+
+        <!-- header left side start -->
+        <div class="header-left-side">
+
+            <!-- header left side menu svg icon -->
+            <div class="header-left-side-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
                     aria-hidden="true"
                     style="pointer-events: none;fill: white; display: inherit; height: 24px;height: 24px;">
@@ -23,10 +36,8 @@
                 </svg>
             </div>
 
-
-
+            <!-- header youtube logo (only display till 560 , after 560 hide the element) -->
             <div class="header-youtube-logo" style="position: relative;">
-
                 <svg xmlns="http://www.w3.org/2000/svg" id="yt-logo-updated-svg_yt9" class="external-icon"
                     viewBox="0 0 90 20" focusable="false" aria-hidden="true"
                     style="pointer-events: none; display: inherit; width: 95px;height: 50px;">
@@ -65,13 +76,28 @@
                         </g>
                     </svg>
                 </svg>
-                <label for="" style="position:absolute;top:15px;right:-14px;color: #aaa;font-size: 10px;">IN</label>
+
+                <!-- youtube logo (IN) label -->
+                <label class="header-left-side-logo-in">IN</label>
             </div>
+
+            <!-- header youtube logo (only see mobile screen before 560) -->
             <img src="./assets/youtube.svg" class="header-mobile-logo" alt="">
+     
         </div>
-        <div class="middle-side">
-            <div class="search-bar">
+        <!-- header left side end -->
+
+
+        <!-- header middle start -->
+        <div class="header-middle">
+
+            <!-- search bar -->
+            <div class="header-search-bar">
+
+                <!-- search input -->
                 <input type="search" class="search-input-field" placeholder="Search">
+                
+                <!-- search icon -->
                 <div class="search-icon-container">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24"
                         width="24" focusable="false" aria-hidden="true"
@@ -82,7 +108,9 @@
                     </svg>
                 </div>
             </div>
-            <div class="voice-recorder">
+
+            <!-- voice recorder -->
+            <div class="header-voice-recorder">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
                     aria-hidden="true"
                     style="pointer-events: none;color:white;fill:white; display: inherit; width: 24px; height: 24px;">
@@ -91,10 +119,16 @@
                     </path>
                 </svg>
             </div>
+
         </div>
-        <div class="right-side">
-            <!-- create video -->
-            <div class="create-video">
+         <!-- header middle end -->
+
+
+        <!-- header right side start -->
+        <div class="header-right-side">
+            
+            <!-- header create video -->
+            <div class="header-create-video">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24"
                     style="pointer-events: none; display: inherit; width: 24px;color:white;fill:white; height: 24px;"
                     viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true">
@@ -103,8 +137,9 @@
                     </path>
                 </svg>
             </div>
-            <!-- notification -->
-            <div class="notification">
+            
+            <!-- header notification -->
+            <div class="header-notification">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
                     viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
                     style="pointer-events: none; display: inherit;color:white;fill:white; width: 100%; height: 100%;">
@@ -114,28 +149,36 @@
                 </svg>
             </div>
 
-            <!-- account -->
-            <div class="account" style="cursor: pointer;">
+            <!-- header header-account -->
+            <div class="header-account" style="cursor: pointer;">
                 <img src="./assets/user.jpg"
                     style="width: 32px;height: 32px;border-radius: 100%;" alt="">
             </div>
+
         </div>
+        <!-- header right side end -->
+
     </header>
     <!-- header end -->
 
 
 
-    <!-- left sidebar and right vides content page  starting.... -->
-    <section class="main-container">
-        <aside class="sidebar-section">
 
+
+
+    <!-- left sidebar and right videos content page starts, includes -->
+    <!-- main container (parent of the section) -->
+    <!-- main-section-sidebar-section - ( sidebar menu buttons)  -->
+    <!-- main-display - ( videos and categories container)  -->
+    <section class="main-container">
+        <!-- left sidebar start (first items,you items,subscription items,explore item, more from youtube items, other items, footer and copyright -->
+        <aside class="main-section-sidebar-section">
 
             <!-- first section -->
-            <div class="first-section">
+            <div class="sidebar-first-section">
 
                 <!-- home -->
                 <div class="link-item">
-
                     <div class="item-image">
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
                             viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
@@ -148,11 +191,8 @@
                     <label class="item-title" for="">Home</label>
                 </div>
 
-
-
                 <!-- shorts -->
                 <div class="link-item">
-
                     <div class="item-image">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
                             focusable="false" aria-hidden="true"
@@ -167,7 +207,6 @@
 
                 <!-- subscriptions -->
                 <div class="link-item" style="margin-bottom: 10px;">
-
                     <div class="item-image">
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
                             viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
@@ -179,7 +218,6 @@
                     <label class="item-title" for="">Subscriptions</label>
                 </div>
 
-
                 <!-- after subscription a line horizontally -->
                 <div class="line-horizontally"></div>
 
@@ -187,14 +225,11 @@
             <!-- first section -->
 
 
-
-
-
             <!-- you section -->
             <div class="you-section">
+
                 <!-- you -->
                 <div class="link-item">
-
                     <label class="item-title" style="width: 25px;font-weight: 500;" for="">You</label>
                     <div class="item-image">
                         <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16"
@@ -319,18 +354,14 @@
             <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
-            <!-- ---------------- -->
 
 
 
 
             <!-- subscriptions -->
             <div class="subscription">
-
                 <div class="link-item" style="">
-
-                    <label class="item-title" for="" style="font-weight: 500;">Subscriptions</label>
-
+                    <label class="item-title" for="" style="font-weight: 500;">Subscriptions</label>s
                 </div>
 
                 <!-- channels previews -->
@@ -359,7 +390,6 @@
                     </div>
                 </div>
 
-
                 <div class="link-item" style="">
                     <img class="" style="width: 24px;height: 24px;border-radius: 100%;"
                         src="./assets/umar.jpg"
@@ -377,7 +407,6 @@
                     <div class="" style="width: 8px;height: 6px;background-color: skyblue;border-radius: 100%;">
                     </div>
                 </div>
-
 
                 <div class="link-item" style="">
                     <img class="" style="width: 24px;height: 24px;border-radius: 100%;"
@@ -418,9 +447,6 @@
                     <label class="item-title" for="">Show more</label>
                 </div>
                 <!-- channels previews -->
-
-
-
             </div>
 
 
@@ -429,7 +455,6 @@
             <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
-            <!-- ---------------- -->
 
 
             <!-- explore -->
@@ -599,16 +624,10 @@
 
             </div>
 
-
-
-
             <!--  a line horizontally -->
             <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
-            <!-- ---------------- -->
-
-
 
             <!-- More from YouTube -->
             <div class="more-from-youtube">
@@ -723,15 +742,10 @@
             <!-- More from YouTube -->
 
 
-
             <!--  a line horizontally -->
             <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
-            <!-- ---------------- -->
-
-
-
 
             <div class="no-title">
 
@@ -803,10 +817,6 @@
             <div class="line-horizontally-container" style="padding: 0px 20px 0px 0px;">
                 <div class="line-horizontally" style="margin: 10px 0px 0px 0px;;"></div>
             </div>
-            <!-- ---------------- -->
-
-
-
 
             <div class="sidebar-footer">
                 <div class="links-container">
@@ -833,12 +843,15 @@
                 <p class="links-container" style="margin-top: 10px;color:#717171">&copy; 2024 Google LLC</p>
             </div>
 
-
         </aside>
+        <!-- left side end -->
+
+
+
         <main class="main-display">
+            
             <!-- categories -->
             <div class="categories-container">
-
                 <div class="categories-section">
                     <div class="category-item">All </div>
                     <div class="category-item">Music </div>
@@ -1357,7 +1370,7 @@
     </section>
     </div>
 
-    <!-- mobile menu -->
+    <!-- mobile header left side menu -->
 
 </body>
 

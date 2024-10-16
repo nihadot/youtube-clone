@@ -1,10 +1,9 @@
-
 /* ------------------------------------------------------------------------------------------- */
-/* heading section ( three sides - left-side , middle-side , right-side ) starting .... */
+/* heading section ( three sides - header-left-side , header-middle , header-right-side ) starting .... */
 /* ------------------------------------------------------------------------------------------- */
 
 /* header */
-.header{
+.header {
     background-color: #000;
     position: fixed;
     width: 100%;
@@ -17,18 +16,26 @@
 }
 
 /* header left ( icons for menu and youtube ) */
-.header .left-side{
+.header .header-left-side {
     display: flex;
-    background-color:#000;
+    background-color: #000;
     width: 200px;
     align-items: center;
     gap: 16px;
     cursor: pointer;
+}
 
+/* youtube logo (IN) label */
+.header .header-left-side .header-left-side-logo-in {
+    position: absolute;
+    top: 15px;
+    right: -14px;
+    color: #aaa;
+    font-size: 10px;
 }
 
 /* header middle ( input,search and voice ) */
-.header .middle-side{
+.header .header-middle {
     flex: 1;
     display: flex;
     align-items: center;
@@ -37,7 +44,7 @@
 }
 
 /* header middle input div class name */
-.header .middle-side .search-bar{
+.header .header-middle .header-search-bar {
     display: flex;
     border-radius: 40px;
     padding: 0px 0px 0px 16px;
@@ -48,8 +55,7 @@
 }
 
 /* header middle input field class name */
-.header .middle-side .search-input-field{
-
+.header .header-middle .search-input-field {
     outline: none;
     border: none;
     background: transparent;
@@ -57,22 +63,22 @@
     color: white;
     font-size: 16px;
     font-weight: 400;
+    padding-right: 14px;
     flex: 1;
 }
 
 /* header middle input search icon div class name */
-.header .middle-side .search-icon-container{
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        background: #303030;
-        width: 55px;
-        justify-content: center;
+.header .header-middle .search-icon-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #303030;
+    width: 55px;
+    justify-content: center;
 }
 
-
 /* void recoring */
-.header .middle-side .voice-recorder{
+.header .header-middle .header-voice-recorder {
     display: flex;
     cursor: pointer;
     background: #303030;
@@ -85,13 +91,13 @@
 }
 
 /* if user hover the icon */
-.header .middle-side .voice-recorder:hover{
+.header .header-middle .header-voice-recorder:hover {
     background-color: #454242;
 
 }
 
 /* header right side */
-.header .right-side{
+.header .header-right-side {
     width: 168px;
     display: flex;
     justify-content: center;
@@ -101,7 +107,8 @@
 }
 
 /* create video, notificatio */
-.header .right-side .create-video,.notification{
+.header .header-right-side .header-create-video,
+.header-notification {
     width: 24px;
     height: 24px;
     padding: 5px;
@@ -109,15 +116,16 @@
     cursor: pointer;
 }
 
-/* if user hover create video, notification */
-.header .right-side .create-video:hover,.notification:hover{
+/* if user hover create video, header-notification */
+.header .header-right-side .header-create-video:hover,
+.header-notification:hover {
     width: 24px;
     height: 24px;
     background-color: #454242;
 }
 
 /* ------------------------------------------------------------------------------------------- */
-/* heading section ( three sides - left-side , middle-side , right-side ) ending .... */
+/* heading section ( three sides - header-left-side , header-middle , header-right-side ) ending .... */
 /* ------------------------------------------------------------------------------------------- */
 
 
@@ -125,13 +133,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* main container  ( main-section-sidebar-section , main-display ) starting .... */
+/* ------------------------------------------------------------------------------------------- */
+
+
 /* main container */
-.main-container{
-display: flex;
-width: 100%;
-height: 100vh;
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
-.main-container .sidebar-section{
+
+
+
+
+/* left menu start ----------------- */
+/* main container left menu buttons section class name */
+.main-container .main-section-sidebar-section {
     background: #000;
     margin-top: 60px;
     width: 250px;
@@ -140,11 +169,19 @@ height: 100vh;
     overflow-y: auto;
 }
 
-.main-container .sidebar-section .first-section,.you-section,.subscription,.explore,.more-from-youtube,.no-title{
+/* first section class name */
+.main-container .main-section-sidebar-section .sidebar-first-section,
+.you-section,
+.subscription,
+.explore,
+.more-from-youtube,
+.no-title {
     padding: 0px 12px;
     margin-top: 10px;
 }
-.main-container .sidebar-section .link-item{
+
+/* link item */
+.main-container .main-section-sidebar-section .link-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -153,12 +190,14 @@ height: 100vh;
     border-radius: 8px;
     cursor: pointer;
 }
-.main-container .sidebar-section .link-item:hover {
 
+/* if user hover link item */
+.main-container .main-section-sidebar-section .link-item:hover {
     background: #ffffff1a;
 }
 
-.main-container .sidebar-section .item-title {
+/* link item title  */
+.main-container .main-section-sidebar-section .item-title {
     font-size: 14px;
     font-weight: 400;
     color: white;
@@ -169,18 +208,13 @@ height: 100vh;
 
 }
 
-
-
-
-
-.main-container .sidebar-section .sidebar-footer{
+/* left side footer */
+.main-container .main-section-sidebar-section .sidebar-footer {
     padding: 10px 6px 24px 24px;
 }
 
-
-
-
-.main-container .sidebar-section .links-container,
+/* side bar footer */
+.main-container .main-section-sidebar-section .links-container,
 a {
     font-size: 13px;
     font-weight: 500;
@@ -193,6 +227,7 @@ a {
 }
 
 
+/* left menu end -------------- */
 
 
 
@@ -201,30 +236,37 @@ a {
 
 
 
+/* main display start ------------- */
 
 
-
-
-.main-container .main-display{
+/* main display container */
+.main-container .main-display {
     flex: 1;
     margin-top: 60px;
     background-color: #000;
-    overflow-x:scroll ;
+    overflow-x: scroll;
 }
 
-.main-container .main-display::-webkit-scrollbar{
-   display: none;
+/* hide main display scrollbar  */
+.main-container .main-display::-webkit-scrollbar {
+    display: none;
 
 }
-/* main container */
+
+/* main container end */
 
 
 
 
-/* cateogires */
- .categories-container {
+
+/* cateogires start */
+
+/* categories container */
+.categories-container {
     padding: 0px 20px;
 }
+
+/* categories section */
 .categories-section {
     display: flex;
     gap: 13px;
@@ -235,9 +277,13 @@ a {
     width: 100%;
     overflow-x: auto;
 }
-.main-container .main-display .categories-section::-webkit-scrollbar{
+
+/* categories section scroller display none */
+.main-container .main-display .categories-section::-webkit-scrollbar {
     display: none;
 }
+
+/* category item */
 .main-container .main-display .categories-section .category-item {
     padding: 9px 15px;
     background: #ffffff1a;
@@ -248,10 +294,15 @@ a {
     cursor: pointer;
 }
 
+/* cateogires end  */
+
+
 
 
 
 /* video container */
+
+
 /* videos container */
 .main-container .main-display .videos-container {
     height: 100%;
@@ -260,11 +311,14 @@ a {
     padding: 0px 20px 0px 20px;
 
 }
+
+/* video container scoller hide */
 .main-container .main-display .videos-container::-webkit-scrollbar {
     display: none;
 }
 
 
+/* youtube videos */
 .main-container .main-display .youtube-videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -273,14 +327,15 @@ a {
     row-gap: 20px
 }
 
-
-.main-container .main-display  .youtube-videos .video-item {
+/* youtube video item */
+.main-container .main-display .youtube-videos .video-item {
     height: 300px;
     cursor: pointer;
 
 }
 
-.main-container .main-display  .youtube-videos .video-tag {
+/* youtube video item */
+.main-container .main-display .youtube-videos .video-tag {
     height: 207px;
     width: 100%;
     background-color: #303030;
@@ -288,14 +343,16 @@ a {
     overflow: hidden;
     position: relative;
 }
-.main-container .main-display .youtube-videos .video-tag img{
+
+/* youtube video image tag */
+.main-container .main-display .youtube-videos .video-tag img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-.main-container .main-display  .youtube-videos .video-contents {
+/* youtube video contents */
+.main-container .main-display .youtube-videos .video-contents {
     color: white;
     display: flex;
     justify-content: space-between;
@@ -305,23 +362,19 @@ a {
     gap: 10px;
 }
 
-
-
-
-
-
-.main-container .main-display  .video-contents .video-titles {
+/* youtube video contents */
+.main-container .main-display .video-contents .video-titles {
     display: flex;
     flex-direction: column;
     gap: 4px;
     cursor: pointer;
     position: relative;
     padding-right: 15px;
-flex: 1;
+    flex: 1;
 }
 
-
-.main-container .main-display  .video-titles h4 {
+/* youtube video title h4 */
+.main-container .main-display .video-titles h4 {
     font-size: 15px;
     font-weight: 500;
     display: -webkit-box;
@@ -334,20 +387,20 @@ flex: 1;
 
 }
 
-
-.main-container .main-display  .video-titles label {
+/* youtube video title label */
+.main-container .main-display .video-titles label {
     color: #aaa;
     font-size: 14px;
     font-weight: 400;
 }
 
-
-.main-container .main-display  .video-titles label:hover {
+/* youtube video title label hover effect */
+.main-container .main-display .video-titles label:hover {
     color: #fff;
 }
 
-
-.main-container .main-display  .video-titles div {
+/* youtube video titles div */
+.main-container .main-display .video-titles div {
     font-size: 13px;
     display: flex;
     font-weight: 400;
@@ -355,8 +408,8 @@ flex: 1;
     align-items: center;
 }
 
-
-.main-container .main-display  .video-titles .video-info {
+/* youtube video info */
+.main-container .main-display .video-titles .video-info {
     position: absolute;
     top: 1px;
     right: -3px;
@@ -364,8 +417,8 @@ flex: 1;
     border-radius: 100%;
 }
 
-
-.main-container .main-display  .video-titles .video-info:hover {
+/* youtube video info hover */
+.main-container .main-display .video-titles .video-info:hover {
     background-color: #555555a6;
 }
 
@@ -373,22 +426,33 @@ flex: 1;
 
 
 
-/*  */
-.header .header-mobile-logo{
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* main container  ( main-section-sidebar-section , main-display ) starting .... */
+/* ------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* mobile header */
+.header .header-mobile-logo {
     display: none;
 }
 
-
-
-
-/* mobile menu */
-.mobile-menu-container{
+/* mobile menu container */
+.mobile-menu-container {
     bottom: 0px;
     position: fixed;
     width: 100%;
     display: none;
 }
-.mobile-menu{
+
+/* mobile menu */
+.mobile-menu {
     display: flex;
     background: #000;
     color: white;
@@ -397,7 +461,9 @@ flex: 1;
 
 
 }
-.mobile-menu .mobile-menu-item{
+
+/* mobile menu items */
+.mobile-menu .mobile-menu-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -405,12 +471,16 @@ flex: 1;
     gap: 6px;
     padding: 12px 0px;
 }
-.mobile-menu .mobile-menu-item-image{
+
+/* mobile menu items image */
+.mobile-menu .mobile-menu-item-image {
     width: 24px;
     height: 24px;
 }
 
-.mobile-menu .mobile-menu-item-title{
+
+/* mobile menu item title */
+.mobile-menu .mobile-menu-item-title {
     font-size: 10px;
     text-align: center;
 
@@ -420,166 +490,186 @@ flex: 1;
 
 
 
+
+
+
+
+
+
 /* responsive classess */
 
-
-@media (max-width:1760px){
+@media (max-width:1760px) {
     .main-container .main-display .youtube-videos {
-
-           grid-template-columns: repeat(6, 1fr);
-
-    }
-}
-@media (max-width:1660px){
-    .main-container .main-display .youtube-videos {
-
-           grid-template-columns: repeat(5, 1fr);
-
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 
-@media (max-width:1560px){
+@media (max-width:1660px) {
     .main-container .main-display .youtube-videos {
-
-           grid-template-columns: repeat(4, 1fr);
-
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
-@media (max-width:1440px){
+@media (max-width:1560px) {
     .main-container .main-display .youtube-videos {
-
-           grid-template-columns: repeat(3, 1fr);
-
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (max-width:1260px){
-    .main-container .sidebar-section{
+@media (max-width:1440px) {
+    .main-container .main-display .youtube-videos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
+@media (max-width:1260px) {
+    .main-container .main-section-sidebar-section {
         width: 230px;
     }
 }
 
 
 
-@media (max-width:1130px){
-    .main-container .sidebar-section{
-
+@media (max-width:1130px) {
+    .main-container .main-section-sidebar-section {
         width: 80px;
     }
-    .main-container .sidebar-section .you-section,.subscription,.explore ,.more-from-youtube,.no-title,.sidebar-footer{
-        display: none;
 
-    }
-    .main-container .sidebar-section .line-horizontally-container{
+    .main-container .main-section-sidebar-section .you-section,
+    .subscription,
+    .explore,
+    .more-from-youtube,
+    .no-title,
+    .sidebar-footer {
         display: none;
     }
-    .main-container .sidebar-section .line-horizontally{
+
+    .main-container .main-section-sidebar-section .line-horizontally-container {
         display: none;
     }
-    .main-container .sidebar-section .link-item{
+
+    .main-container .main-section-sidebar-section .line-horizontally {
+        display: none;
+    }
+
+    .main-container .main-section-sidebar-section .link-item {
         flex-direction: column;
     }
-    .main-container .sidebar-section .item-title {
+
+    .main-container .main-section-sidebar-section .item-title {
         width: fit-content;
         font-size: 10px;
         font-weight: 400;
     }
-    .header .middle-side .voice-recorder {
+
+    .header .header-middle .header-voice-recorder {
         width: 40px;
-    height: 35px;
+        height: 35px;
     }
 }
 
-@media(max-width:1096px){
+@media(max-width:1096px) {
     .main-container .main-display .youtube-videos {
-        grid-template-columns:repeat(2,1fr)
+        grid-template-columns: repeat(2, 1fr)
     }
-    .main-container .main-display .youtube-videos .video-item{
+
+    .main-container .main-display .youtube-videos .video-item {
         height: 320px;
     }
-    .main-container .main-display .youtube-videos .video-tag{
+
+    .main-container .main-display .youtube-videos .video-tag {
         height: 230px;
     }
+
     .categories-section {
         padding: 0px 0px 10px 0px;
     }
 }
 
 
-@media(max-width:792px){
-    .main-container .sidebar-section{
+@media(max-width:792px) {
+    .main-container .main-section-sidebar-section {
         display: none;
     }
 }
 
-@media(max-width:699px){
+@media(max-width:699px) {
     .main-container .main-display .youtube-videos {
-        grid-template-columns:repeat(1,1fr)
+        grid-template-columns: repeat(1, 1fr)
     }
-    .main-container .main-display .youtube-videos .video-item{
+
+    .main-container .main-display .youtube-videos .video-item {
         height: 300px;
     }
-    .main-container .main-display .youtube-videos .video-tag{
+
+    .main-container .main-display .youtube-videos .video-tag {
         height: 200px;
     }
-    .main-container .main-display .videos-container{
-        padding:  0px 40px;
+
+    .main-container .main-display .videos-container {
+        padding: 0px 40px;
     }
 
 }
 
 
-@media(max-width:560px){
-   
-    .main-container .main-display .videos-container{
-        padding:  0px 20px;
+@media(max-width:560px) {
+
+    .main-container .main-display .videos-container {
+        padding: 0px 20px;
     }
-    .header .menu{
+
+    .header .header-left-side-menu {
         display: none;
     }
-    .header .header-youtube-logo{
+
+    .header .header-youtube-logo {
         display: none;
     }
-    .header .header-mobile-logo{
-        width: 34px;height: 34px;
+
+    .header .header-mobile-logo {
+        width: 34px;
+        height: 34px;
         display: block;
     }
-    .header .middle-side .search-input-field{
+
+    .header .header-middle .search-input-field {
         font-size: 13px;
         width: 60px;
     }
-    .header .middle-side .search-icon-container {
+
+    .header .header-middle .search-icon-container {
         width: 40px;
     }
-    .header .middle-side .voice-recorder {
+
+    .header .header-middle .header-voice-recorder {
         display: none;
     }
-    .header .right-side .create-video, .notification {
+
+    .header .header-right-side .header-create-video,
+    .header-notification {
         display: none;
     }
-    .header .right-side{
+
+    .header .header-right-side {
         padding: 0px;
     }
-    .header .left-side{
+
+    .header .header-left-side {
         width: 40px;
     }
-    .header .right-side {
-width: 60px;
-padding: 0px 20px 0px 0px
+
+    .header .header-right-side {
+        width: 60px;
+        padding: 0px 20px 0px 0px
     }
+
     .main-container .main-display .video-contents .video-titles {
-      
+
         padding-right: 30px;
     }
-    .mobile-menu-container{
+
+    .mobile-menu-container {
         display: block
     }
 }
-
-
-
-
-
-
